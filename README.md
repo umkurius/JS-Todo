@@ -1,4 +1,4 @@
 # JS Todo
-Download repo
-npm i
+Download repo  
+npm i  
 npm start
