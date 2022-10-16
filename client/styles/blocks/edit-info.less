@@ -1,0 +1,58 @@
+.task-info,
+.task-edit {
+  display: flex;
+  flex-direction: column;
+
+  line-height: 24px;
+  color: @font;
+
+  input,
+  textarea {
+    text-indent: 5px;
+    color: @font;
+    background-color: @mainbg;
+    border-radius: 10px;
+    border: 1px solid @bordercolor;
+  }
+
+  input {
+    height: 35px;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  &__buttons {
+    margin-top: 10px;
+
+    .button {
+      padding: 6px 14px;
+      font-size: 12px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.task-edit {
+  b {
+    vertical-align: top;
+  }
+
+  &__title,
+  &__description {
+    border: solid #000000 1px;
+    padding: 1px 3px;
+  }
+
+  &__title {
+    width: 230px;
+  }
+
+  &__description {
+    width: 175px;
+    height: 60px;
+    margin-top: 3px;
+    resize: none;
+  }
+}

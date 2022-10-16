@@ -1,0 +1,52 @@
+.tasks {
+  max-width: 900px;
+  margin: 30px auto 0;
+
+  &__additional {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: end;
+  }
+
+  &__btn-clear {
+    background-color: @blue;
+    padding: 8px 16px;
+    margin-right: 20px;
+  }
+
+  .task {
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+    padding: 5px;
+    background-color: @mainbg;
+    color: @font;
+    border: 3px solid @secondarybg;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &__title {
+      max-width: 400px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 1px 0;
+      transition: all .3s;
+    }
+
+    &__btn-edit:hover .task__btn-svg {
+      fill: @blue;
+    }
+
+    &__btn-svg {
+      width: 100%;
+      transition: .3s;
+    }
+
+    &__btn-remove:hover {
+      cursor: pointer;
+    }
+  }
+}

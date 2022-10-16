@@ -1,0 +1,61 @@
+@import "reset";
+@import "vars";
+@import "blocks/header";
+@import "blocks/buttons";
+@import "blocks/about";
+@import "blocks/.task-add";
+@import "blocks/table";
+@import "blocks/tasks";
+@import "blocks/modals";
+@import "blocks/edit-info";
+@import "blocks/login-registration";
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif !important;
+}
+
+body {
+  min-width: 700px;
+
+  @media @breakpoint {
+    min-width: auto;
+  }
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header-container,
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  background: @secondarybg;
+  color: @grey;
+}
+
+.content-container {
+  flex: 1;
+  padding: 50px;
+  background-color: @mainbg;
+
+  @media @breakpoint {
+    padding: 10px;
+  }
+}
+
+.page-title {
+  margin: 50px 0;
+  color: @font;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+

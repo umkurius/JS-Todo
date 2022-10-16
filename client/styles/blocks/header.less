@@ -1,0 +1,79 @@
+.header {
+  display: flex;
+  width: 100%;
+  margin: 0 50px;
+  justify-content: space-between;
+  align-items: center;
+  color: @grey;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+  &__logo-img {
+    height: 32px;
+
+    img {
+      height: 100%;
+      margin-right: 15px;
+
+      @media @breakpoint {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__username {
+    margin-right: 10px;
+
+    @media @breakpoint {
+      margin-right: 5px;
+    }
+  }
+
+  &__usernav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav-logout {
+    color: @grey;
+  }
+
+  &__logout {
+    transition: .3s;
+  }
+
+  &__nav-logout:hover {
+    cursor: pointer;
+  }
+
+  &__nav-logout:hover &__logout {
+    color: #ffffff;
+  }
+
+  &__link {
+    margin: 0 20px;
+    transition: all .3s;
+    color: @grey;
+
+    @media @breakpoint {
+      margin: 0 5px;
+    }
+
+    &:hover,
+    &.active {
+      color: #ffffff;
+    }
+  }
+
+  @media @breakpoint {
+    margin: 0 5px;
+    font-size: 14px;
+  }
+}
